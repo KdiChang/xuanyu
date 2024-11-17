@@ -1,0 +1,771 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>开发信息分享 | Goldydocs</title>
+<meta name="description" content="Already installed? Play us a song, Navidrome!">
+<meta property="og:url" content="http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/">
+  <meta property="og:site_name" content="Goldydocs">
+  <meta property="og:title" content="开发信息分享">
+  <meta property="og:description" content="Already installed? Play us a song, Navidrome!">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="开发信息分享">
+  <meta itemprop="description" content="Already installed? Play us a song, Navidrome!">
+  <meta itemprop="datePublished" content="2024-10-16T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-16T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="开发信息分享">
+  <meta name="twitter:description" content="Already installed? Play us a song, Navidrome!">
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"><path style="fill:#0084ff" d="M256 10.449C120.275 10.449 10.449 120.276 10.449 256c0 135.725 109.826 245.551 245.551 245.551S501.551 391.725 501.551 256C501.551 120.276 391.725 10.449 256 10.449z"/><path style="fill:#fff" d="M256 168.229c-48.515.0-87.771 39.257-87.771 87.771s39.257 87.771 87.771 87.771 87.771-39.257 87.771-87.771S304.515 168.229 256 168.229z"/><path d="M437.061 74.94C388.735 26.615 324.434.0 256 0S123.265 26.615 74.939 74.94.0 187.566.0 256s26.614 132.735 74.939 181.061S187.566 512 256 512s132.735-26.614 181.061-74.939S512 324.434 512 256 485.386 123.266 437.061 74.94zM256 491.102C126.365 491.102 20.898 385.635 20.898 256S126.365 20.898 256 20.898 491.102 126.365 491.102 256 385.635 491.102 256 491.102z"/><path d="M354.22 256c0-54.158-44.061-98.22-98.22-98.22s-98.22 44.062-98.22 98.22 44.062 98.22 98.22 98.22 98.22-44.061 98.22-98.22zm-175.542.0c0-42.636 34.686-77.322 77.322-77.322s77.322 34.686 77.322 77.322S298.636 333.322 256 333.322 178.678 298.636 178.678 256z"/><path d="M285.257 256c0-16.132-13.124-29.257-29.257-29.257S226.743 239.868 226.743 256s13.125 29.257 29.257 29.257S285.257 272.133 285.257 256zm-37.616.0c0-4.609 3.75-8.359 8.359-8.359 4.609.0 8.359 3.75 8.359 8.359.0 4.609-3.75 8.359-8.359 8.359C251.391 264.359 247.641 260.609 247.641 256z"/><path d="M256 391.837c-5.771.0-10.449 4.678-10.449 10.449s4.678 10.449 10.449 10.449c41.897.0 81.265-16.294 110.853-45.883 29.587-29.587 45.881-68.955 45.881-110.852.0-5.771-4.678-10.449-10.449-10.449s-10.449 4.678-10.449 10.449C391.837 330.9 330.9 391.837 256 391.837z"/><path d="M449.306 245.551c-5.771.0-10.449 4.678-10.449 10.449.0 1.481-.018 2.958-.052 4.43-.136 5.769 4.43 10.557 10.199 10.692.085.002.168.003.252.003 5.656.0 10.307-4.517 10.442-10.202.039-1.637.059-3.279.059-4.925C459.755 250.229 455.077 245.551 449.306 245.551z"/><path d="M447.55 284.239c-5.656-1.145-11.168 2.52-12.308 8.178-17.107 84.854-92.489 146.44-179.242 146.44-5.771.0-10.449 4.678-10.449 10.449s4.678 10.449 10.449 10.449c47.353.0 93.467-16.573 129.847-46.668 35.9-29.697 60.717-71.084 69.881-116.54C456.868 290.891 453.207 285.38 447.55 284.239z"/><path d="M256 120.163c5.771.0 10.449-4.678 10.449-10.449S261.771 99.265 256 99.265c-41.897.0-81.265 16.294-110.853 45.883C115.559 174.735 99.265 214.103 99.265 256c0 5.771 4.678 10.449 10.449 10.449s10.449-4.678 10.449-10.449c0-74.9 60.937-135.837 135.837-135.837z"/><path d="M62.996 240.876c-5.759-.14-10.557 4.43-10.692 10.199-.039 1.637-.059 3.279-.059 4.925.0 5.771 4.678 10.449 10.449 10.449S73.143 261.771 73.143 256c0-1.481.018-2.958.052-4.43C73.331 245.8 68.765 241.013 62.996 240.876z"/><path d="M256 73.143c5.771.0 10.449-4.678 10.449-10.449S261.771 52.245 256 52.245c-47.353.0-93.467 16.573-129.847 46.668-35.9 29.697-60.717 71.084-69.881 116.54-1.14 5.657 2.521 11.168 8.178 12.308.697.141 1.392.208 2.076.208 4.872.0 9.232-3.426 10.232-8.386C93.864 134.729 169.247 73.143 256 73.143z"/></svg></span><span class="navbar-brand__name">Goldydocs</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/about/"><span>About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/demo/"><span>Demo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs/"><span>Documentation</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">开发信息分享</h1>
+<div class="lead">Already installed? Play us a song, Navidrome!</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-b90652209d48887d0e9fcbf3d0afaad2">CCUS-keycloak-long-time-access</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-404112a879bef1830f917a26d032145b">Connect-to-VM-within-your-PC</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-55b5183ec6c6694d1fb446b48728fa40">Development Language Chapter</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-1dd3453840af6335cc33a4c4e6be704c">Guacamole docker installation</a></li>
+
+
+    
+  
+    
+    
+	
+<li>5: <a href="#pg-da8e1d250a7c033a5ca9d51d0833d23a">How to use git</a></li>
+
+
+    
+  
+    
+    
+	
+<li>6: <a href="#pg-9c15140cb1779248520a9c129ebbcbd1">Practical Software Chapter</a></li>
+
+
+    
+  
+    
+    
+	
+<li>7: <a href="#pg-989506c96f283b9e486b53305194321e">Problem-and-fix-when-sending-code-using-Teams</a></li>
+
+
+    
+  
+    
+    
+	
+<li>8: <a href="#pg-0466d50b902e60233c6917d2dd459185">dev-team-info</a></li>
+
+
+    
+  
+    
+    
+	
+<li>9: <a href="#pg-b6702761173c29b65dfc15aa8dfbfe65">开发信息分享</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <p>开始分享吧</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-b90652209d48887d0e9fcbf3d0afaad2">1 - CCUS-keycloak-long-time-access</h1>
+    
+	<p>In order to provide access token for CCUS project(K-spice adaptor)</p>
+<p>temporarily set the length to be 60 days:
+<img alt="picture 0" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/CCUS-keycloak-long-time-access_2023_09_11_11_57_2.png"></p>
+<p>Add <code>Client</code>:
+<img alt="picture 2" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/CCUS-keycloak-long-time-access_2023_09_11_12_04_0.png"></p>
+<p>Add <code>Roles</code>: &ldquo;user&rdquo;:
+<img alt="picture 3" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/CCUS-keycloak-long-time-access_2023_09_11_13_50_4.png"></p>
+<p>Click &ldquo;Add selected&rdquo; -&gt; &ldquo;user&rdquo; from &ldquo;Available roles&rdquo;
+<img alt="picture 4" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/CCUS-keycloak-long-time-access_2023_09_11_14_06_3.png"></p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-404112a879bef1830f917a26d032145b">2 - Connect-to-VM-within-your-PC</h1>
+    
+	<h3 id="by-default-vm-could-not-visit-host-pc">by default VM could not visit host PC</h3>
+<p>Here is the way to make the communication channel work:</p>
+<ul>
+<li>Connect to wifi: KDI-IoT</li>
+<li>Change the connected wifi property to &ldquo;private&rdquo;: eg:
+<img alt="picture 0" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/Connect-to-VM-within-your-PC_2023_12_12_11_24_2.png"><br>
+<img alt="picture 1" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/Connect-to-VM-within-your-PC_2023_12_12_11_25_3.png"></li>
+<li>Create an inbound rule within firewall:
+<img alt="picture 2" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/Connect-to-VM-within-your-PC_2023_12_12_11_26_2.png"></li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-55b5183ec6c6694d1fb446b48728fa40">3 - Development Language Chapter</h1>
+    
+	
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-1dd3453840af6335cc33a4c4e6be704c">4 - Guacamole docker installation</h1>
+    
+	<p>background info: Baiyun project from Mu team(ouyang, dapeng) needs this feature.</p>
+<p>Official ref:</p>
+<p><a href="https://guacamole.apache.org/doc/gug/guacamole-docker.html">https://guacamole.apache.org/doc/gug/guacamole-docker.html</a></p>
+<p>client backup: guacamole-backup.sql</p>
+<p>TODO:</p>
+<ol>
+<li>
+<p>Change the mysql psw below to a more secure one.</p>
+</li>
+<li>
+<p>Change the Guacamode login psw (default is guacadmin/guacadmin)</p>
+</li>
+<li>
+<p>Set up docker container restart policy</p>
+</li>
+<li>
+<p>SCP to linux server</p>
+</li>
+</ol>
+<p>Script of installation for Baiyun project:</p>
+<ol>
+<li></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//use latest version(202303)
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">docker</span> <span style="color:#000">pull</span> <span style="color:#000">guacamole</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">guacd</span>:<span style="color:#204a87;font-weight:bold">1.5.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">docker</span> <span style="color:#000">pull</span> <span style="color:#000">guacamole</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">guacamole</span>:<span style="color:#204a87;font-weight:bold">1.5.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//mysql v8 encounters error: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//use latest v.5.7
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">docker</span> <span style="color:#000">pull</span> <span style="color:#000">mysql</span>:<span style="color:#204a87;font-weight:bold">5.7.41</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">docker</span> <span style="color:#000">run</span> <span style="color:#ce5c00;font-weight:bold">--</span><span style="color:#000">name</span> <span style="color:#000">kdic</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">guacd</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">d</span> <span style="color:#000">guacamole</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">guacd</span>:<span style="color:#204a87;font-weight:bold">1.5.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">docker</span> <span style="color:#000">run</span> <span style="color:#ce5c00;font-weight:bold">--</span><span style="color:#000">name</span> <span style="color:#000">kdic</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">mysql</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">e</span> <span style="color:#000">MYSQL_ROOT_PASSWORD</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">my</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">secret</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">pw</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">d</span> <span style="color:#000">mysql</span>:<span style="color:#204a87;font-weight:bold">5.7.41</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">docker</span> <span style="color:#000">cp</span> <span style="color:#000">guacamole</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">backup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">sql</span> <span style="color:#000">kdic</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">mysql</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#a40000">/</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">docker</span> <span style="color:#000">exec</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">it</span> <span style="color:#000">kdic</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">mysql</span> <span style="color:#000">bash</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">mysql</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">uroot</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">pmy</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">secret</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">pw</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">mysql</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">create</span> <span style="color:#000">database</span> <span style="color:#000">guacamole</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">mysql</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">use</span> <span style="color:#000">guacamole</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">mysql</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">source</span> <span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">guacamole</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">backup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">sql</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//if not using `MYSQL_SSL_MODE=disabled`, Guacamole will throw error. in debug mode, it said: &#34;ssl.SSLHandshakeException: No appropriate protocol&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">docker</span> <span style="color:#000">run</span> <span style="color:#ce5c00;font-weight:bold">--</span><span style="color:#000">name</span> <span style="color:#000">kdic</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">guacamole</span> <span style="color:#ce5c00;font-weight:bold">\</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ce5c00;font-weight:bold">--</span><span style="color:#000">link</span> <span style="color:#000">kdic</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">guacd</span>:<span style="color:#204a87;font-weight:bold">guacd</span>         <span style="color:#ce5c00;font-weight:bold">\</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ce5c00;font-weight:bold">--</span><span style="color:#000">link</span> <span style="color:#000">kdic</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">mysql</span>:<span style="color:#204a87;font-weight:bold">mysql</span>        <span style="color:#ce5c00;font-weight:bold">\</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">e</span> <span style="color:#000">MYSQL_DATABASE</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">guacamole</span>  <span style="color:#ce5c00;font-weight:bold">\</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">e</span> <span style="color:#000">MYSQL_USER</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">root</span>    <span style="color:#ce5c00;font-weight:bold">\</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">e</span> <span style="color:#000">MYSQL_PASSWORD</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">my</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">secret</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">pw</span> <span style="color:#ce5c00;font-weight:bold">\</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">e</span> <span style="color:#000">MYSQL_SSL_MODE</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">disabled</span> <span style="color:#ce5c00;font-weight:bold">\</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p</span> <span style="color:#000">8080</span>:<span style="color:#204a87;font-weight:bold">8080</span> <span style="color:#000">guacamole</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">guacamole</span>:<span style="color:#204a87;font-weight:bold">1.5.0</span>
+</span></span></code></pre></div><h1 id="deployment">deployment</h1>
+<h2 id="prerequisite-client-settings">prerequisite (client settings)</h2>
+<p>customer server ip address: 10.138.8.97</p>
+<p>docker Version:  17.06.2-ce <a href="https://docs.docker.com/desktop/previous-versions/archive-windows/#docker-community-edition-17062-ce-win27-2017-09-06">https://docs.docker.com/desktop/previous-versions/archive-windows/#docker-community-edition-17062-ce-win27-2017-09-06</a></p>
+<p>docker-compose:  version 1.25.4, build 8d51620a</p>
+<h2 id="enforcement">enforcement</h2>
+<h3 id="prepare">prepare</h3>
+<ul>
+<li>prepare guacamole image</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>docker pull guacamole/guacd:1.5.0
+</span></span><span style="display:flex;"><span>docker pull mysql:5.7.41
+</span></span><span style="display:flex;"><span>docker pull guacamole/guacamole:1.5.0
+</span></span><span style="display:flex;"><span>docker save -o guacd.tar guacamole/guacd:1.5.0
+</span></span><span style="display:flex;"><span>docker save -o guacamole.tar guacamole/guacamole:1.5.0
+</span></span><span style="display:flex;"><span>docker save -o mysql.tar mysql:5.7.41
+</span></span><span style="display:flex;"><span>tar zcvf guacamole.tgz ./guacd.tar ./guacamole.tar ./mysql.tar
+</span></span></code></pre></div><ul>
+<li>copy guacmole.tgz to server</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scp guacamole.tgz ipaddr:/tmp/
+</span></span><span style="display:flex;"><span>tar zxvf guacamole.tgz -C /tmp/
+</span></span><span style="display:flex;"><span>docker load -i /tmp/guacd.tar
+</span></span><span style="display:flex;"><span>docker load -i /tmp/mysql.tar
+</span></span><span style="display:flex;"><span>docker load -i /tmp/guacamole.tar
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#list the guacamole &amp; mysql images</span>
+</span></span><span style="display:flex;"><span>docker image list 
+</span></span></code></pre></div><h3 id="deployment-1">deployment</h3>
+<p>Add customization for logging page:
+Untar the file: guacamoleHomeBaiyun.tar to CUSTOMIZATION_FOLDER (content of CUSTOMIZATION_FOLDER will be like /extensions &hellip;)</p>
+<ul>
+<li>use docker-compose start container</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-compose up -d 
+</span></span></code></pre></div><p>docker-compose.yaml</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#docker-compose.yaml</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">version</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;3&#34;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">services</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">guacd</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">container_name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">kdic-guacd</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">image</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">guacamole/guacd:1.5.0</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">restart</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">always</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">network_mode</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">bridge</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#8f5902;font-style:italic">#按需修改</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">volumes</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#000">./guacd/drive:/drive:rw</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#000">./guacd/record:/record:rw</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">mysql</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">container_name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">kdic-mysql</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">image</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">mysql:5.7.41</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">restart</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">always</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">network_mode</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">bridge</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">environment</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">MYSQL_ROOT_PASSWORD</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;my-Secret-pW&#39;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#8f5902;font-style:italic">#按需修改</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">volumes</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#000">./mysql:/var/lib/mysql:rw</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">guacamole</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">container_name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">kdic-guacamole</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">privileged</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">network_mode</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">bridge</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">depends_on</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#000">guacd</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#000">mysql</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">environment</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">MYSQL_DATABASE</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;guacamole&#39;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">MYSQL_USER</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;root&#39;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">MYSQL_PASSWORD</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;my-Secret-pW&#39;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">MYSQL_SSL_MODE</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;disabled&#39;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">GUACAMOLE_HOME</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">/guaHome </span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">volumes</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">       </span>- <span style="color:#000">CUSTOMIZATION_FOLDER:/guaHome   </span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">image</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">guacamole/guacamole:1.5.0</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">links</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#000">guacd:guacd</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#000">mysql:mysql</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">ports</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#0000cf;font-weight:bold">8080</span><span style="color:#000;font-weight:bold">:</span><span style="color:#0000cf;font-weight:bold">8080</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">restart</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">always</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><ul>
+<li>update mysql data</li>
+</ul>
+<pre tabindex="0"><code>docker cp guacamole.sql kdic-mysql:/
+docker exec -it kdic-mysql bash
+mysql -uroot -pmy-Secret-pW
+mysql &gt; create database guacamole;
+mysql &gt; use guacamole;
+mysql &gt; source /guacamole.sql
+</code></pre><ul>
+<li>
+<p>visit  http://ip:8080/guacamole/  ， 帐号：guacadmin/guacadmin</p>
+</li>
+<li>
+<p>change the password of  user guacadmin</p>
+<ul>
+<li>Navigate to “guacadmin -&gt; Settings” and select the “Preferences” tab</li>
+<li>In the “CHANGE PASSWORD” section, enter the current password and the new password.</li>
+<li>Click “Update Password”.</li>
+</ul>
+</li>
+</ul>
+<h1 id="backup-mysql">Backup mysql</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># find the mysql container id:</span>
+</span></span><span style="display:flex;"><span>docker ps
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># backup from docker image to host PC</span>
+</span></span><span style="display:flex;"><span>docker <span style="color:#204a87">exec</span> CONTAINER_ID /usr/bin/mysqldump -u root --password<span style="color:#ce5c00;font-weight:bold">=</span>MY_SECRET_PW guacamole &gt; backup.sql
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># copy the backup file to local PC current dir:</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># from local PC run:</span>
+</span></span><span style="display:flex;"><span>scp root@10.138.8.97:/root/guacamole/backup.sql .
+</span></span></code></pre></div><h1 id="restore-mysql">Restore mysql</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># by default, guacamole server does not have the database:guacamole</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;create database guacamole;&#34;</span> <span style="color:#000;font-weight:bold">|</span> sudo docker <span style="color:#204a87">exec</span> -i  c3c77b536e96  /usr/bin/mysql -u root --password<span style="color:#ce5c00;font-weight:bold">=</span>aaa
+</span></span><span style="display:flex;"><span>cat backup.sql <span style="color:#000;font-weight:bold">|</span> docker <span style="color:#204a87">exec</span> -i CONTAINER /usr/bin/mysql -u root --password<span style="color:#ce5c00;font-weight:bold">=</span>MY_SECRET_PW guacamole
+</span></span></code></pre></div>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-da8e1d250a7c033a5ca9d51d0833d23a">5 - How to use git</h1>
+    
+	<h1 id="how-to-use-git-to-commit">How to use git to commit</h1>
+<ol>
+<li>确保本地代码在master分支，并拉取最新的远端代码</li>
+</ol>
+<ul>
+<li>拉取最新的远端代码 run <code>git remote update</code>cmd</li>
+</ul>
+<p><img alt="picture 1" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_10_55_4.png"></p>
+<ul>
+<li>切换到master分支 run <code>git checkout master</code>cmd</li>
+</ul>
+<p><img alt="picture 2" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_10_56_1.png"></p>
+<ul>
+<li>查看当前状态 run <code>git status</code>cmd</li>
+</ul>
+<p><img alt="picture 3" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_10_56_2.png"></p>
+<ul>
+<li>查看所有分支列表 run <code>git branch --all</code>cmd</li>
+</ul>
+<p><img alt="picture 4" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_10_57_4.png"></p>
+<ol start="2">
+<li>create your branch base on master branch</li>
+</ol>
+<p>run <code>git checkout</code>cmd. eg:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout -b feature-use-git origin/master  
+</span></span></code></pre></div><p><img alt="picture 5" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_02_2.png"></p>
+<ol start="3">
+<li>push your branch to origin</li>
+</ol>
+<p>run <code>git push</code>cmd. eg:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git push origin feature-use-git  
+</span></span></code></pre></div><p><img alt="picture 6" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_04_1.png"></p>
+<ol start="4">
+<li>add your content</li>
+</ol>
+<p>run <code>git add</code>cmd. eg:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .  
+</span></span></code></pre></div><p><img alt="picture 8" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_09_1.png"></p>
+<p><img alt="picture 7" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_09_2.png"></p>
+<p><img alt="picture 9" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_11_3.png"></p>
+<ol start="5">
+<li>commit your content to local</li>
+</ol>
+<p>run <code>git commit</code>cmd. eg:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git commit -m <span style="color:#4e9a06">&#34;how to use git&#34;</span>  
+</span></span></code></pre></div><p><img alt="picture 10" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_12_4.png"></p>
+<p><img alt="picture 11" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_14_0.png"></p>
+<ol start="6">
+<li>push your content to origin</li>
+</ol>
+<p>run <code>git push</code>cmd. eg:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git push origin feature-use-git   
+</span></span></code></pre></div><p><img alt="picture 12" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_15_2.png"></p>
+<p><img alt="picture 13" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_15_3.png"></p>
+<ol start="7">
+<li>在coding上点击创建合并请求</li>
+</ol>
+<p><img alt="picture 14" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_18_3.png"></p>
+<ol start="8">
+<li>添加标题， 评审者， 检查源分支和目标分支。 点击创建合并请求</li>
+</ol>
+<p><img alt="picture 15" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_19_3.png"></p>
+<ol start="9">
+<li>评审通过后，点击合并分支进行合并</li>
+</ol>
+<p><img alt="picture 16" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/How%20to%20use%20git_2023_05_24_11_22_3.png"></p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-9c15140cb1779248520a9c129ebbcbd1">6 - Practical Software Chapter</h1>
+    
+	<p>&lsquo;- Record screen and output to gif format. here is the [tool]&rsquo;(<a href="https://www.screentogif.com/">https://www.screentogif.com/</a>)</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-989506c96f283b9e486b53305194321e">7 - Problem-and-fix-when-sending-code-using-Teams</h1>
+    
+	<h3 id="how-to-reproduce">How to reproduce:</h3>
+<ul>
+<li>
+<p>One would like to share this code(<code>ktw add environment t https://dev.poc.kognitwin.cn/api --idp=keycloak --tenantId dev-poc --clientId twin-devicelogin --authServerUrl https://auth.ops.kognitwin.cn/ </code>) with colleague.</p>
+<ul>
+<li>The code is like: <br>
+<img alt="picture 2" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/Problem-and-fix-when-sending-code-using-Teams_2023_04_26_10_00_1.png"></li>
+</ul>
+</li>
+<li>
+<p>One copies and pastes to Teams:<br>
+<img alt="picture 1" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/Problem-and-fix-when-sending-code-using-Teams_2023_04_26_09_57_0.png"></p>
+</li>
+<li>
+<p>Colleague copies from Teams but found the code does not work:
+<img alt="picture 4" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/Problem-and-fix-when-sending-code-using-Teams_2023_04_26_10_03_2.png"><br>
+the problem is within Teams because <strong>Teams does some changes to space character</strong> (convert space to non breaking space):</p>
+<ul>
+<li>Showing pasted code from Teams in Notepad++<br/>
+<img alt="picture 3" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/Problem-and-fix-when-sending-code-using-Teams_2023_04_26_10_01_1.png"></li>
+</ul>
+</li>
+</ul>
+<h3 id="how-to-solve">How to solve:</h3>
+<p>Use Code snippet in Teams when sending code:<br/>
+<img alt="picture 5" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/Problem-and-fix-when-sending-code-using-Teams_2023_04_26_10_04_3.png"></p>
+<h3 id="ref">ref:</h3>
+<p><a href="https://techcommunity.microsoft.com/t5/microsoft-teams/when-pasting-sql-into-teams-spaces-get-switched-to-nonbreaking/m-p/3743525">When pasting SQL into Teams, spaces get switched to NonBreaking Spaces and prevent SQL from running
+</a></p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-0466d50b902e60233c6917d2dd459185">8 - dev-team-info</h1>
+    
+	<h1 id="info">Info</h1>
+<p>Welcome to the dev team! 👏<br/> <br/>
+Please read below standards carefully and come up with a better suggestions if you have any. <br/>
+Let&rsquo;s together build the BEST dev team! <br/><br/>
+FYI: Please be aware the info/work log you provide on coding.net platform will be evaluated towards your KPI assessment.</p>
+<h2 id="team-members">Team members</h2>
+<p><img alt="picture 4" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/dev-team-info_2023_10_31_10_35_2.png"></p>
+<hr>
+<h2 id="task-assignment-and-execution">Task Assignment and execution</h2>
+<p>Task assignment is done via <a href="https://kdic.coding.net/">https://kdic.coding.net/</a> platform。</p>
+<ul>
+<li>
+<p>Executor will get an email when task is assigned. (please check spam if no email received).</p>
+</li>
+<li>
+<p>Please update the task status to &ldquo;处理中&rdquo; when working on a task: eg:
+<img alt="picture 0" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/dev-team-info_2023_10_31_10_31_3.png"></p>
+</li>
+<li>
+<p>Please update the task status to &ldquo;已完成&rdquo; when completing a task: eg:
+<img alt="picture 1" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/dev-team-info_2023_10_31_10_31_0.png"></p>
+</li>
+<li>
+<p>Task status will be changed to &ldquo;已审核&rdquo; when leaders have reviewed it.</p>
+<ul>
+<li>
+<p>Some criteria:</p>
+<ul>
+<li>
+<p>PR is linked to this task if coding/Knowledge tracking/sharing is involved.</p>
+</li>
+<li>
+<p>Task description/comment has been updated.</p>
+</li>
+<li>
+<p>Knowledge tracking/sharing has been added.</p>
+</li>
+<li>
+<p>Time logged in coding.net.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Remember to log your time and what you have done in general:
+<img alt="picture 3" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/dev-team-info_2023_10_31_10_32_3.png"></p>
+</li>
+</ul>
+<h2 id="coding-standard">Coding standard</h2>
+<ul>
+<li>Write in detail &ldquo;why you make the commit&rdquo; in your commit msg.</li>
+<li>Try to follow the <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.2/">convention</a> when committing.</li>
+<li>The only way to contribute to a repo is via PR.</li>
+</ul>
+<h2 id="knowledge-sharingtracking">Knowledge Sharing/Tracking</h2>
+<ul>
+<li>ref: <a href="https://kdic.coding.net/p/km/d/knowledge-management/git">https://kdic.coding.net/p/km/d/knowledge-management/git</a></li>
+<li>Language is generally English.</li>
+</ul>
+<h2 id="working-language-hopefully">Working Language (hopefully)</h2>
+<ul>
+<li>Working language is generally English.</li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-b6702761173c29b65dfc15aa8dfbfe65">9 - 开发信息分享</h1>
+    
+	<p>背景：</p>
+<p>为了搭建公司开发、部署测试环境，在机房搭建了两台服务器（Dell Power Edge 750，Intel Xeon Silver 4314 CPU ，128G RAM），安装了windows 2019 standard 操作系统。需在服务器上安装Docker并在其上运行Nexus和Mysql。目前服务器与internet隔离，无法上网，通过笔记本连接Xiaomi无线路由器，通过Windows远程桌面操作控制服务器 。服务器1：192.168.100.101服务器2:   192.168.100.102</p>
+<p>问题描述：</p>
+<p>服务器1上安装有K-spice软件，在安装Docker desktop（Version 4.15.0）并安装Nexus (Version 3.45.0)和Mysql(8.0.31)后发现如下异常现象先启动Nexus 可正常运行，如此时启动Mysql，Nexus出现异常退出，此时无log输出。先启动Mysql，再启动Nexus，无法正常启动，输出如下WARN信息。</p>
+<p>尝试在Nexus启动后启动Nginx，未出现问题。</p>
+<p>解决方案：</p>
+<p>在Docker Desktop软件的Resources设置内存参数</p>
+<p><img alt="knowledge/12943ad4-1ac9-414c-ac86-f42ea6b1ed43.png" src="/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/12943ad4-1ac9-414c-ac86-f42ea6b1ed43.png"></p>
+<p>结论：</p>
+<p>Nexus3内置的OrientDB的未被分配足够内存资源导致。</p>
+<p>Note:</p>
+<p>Nexus3中的OrientDB部分关于内存资源的日志显示错误。</p>
+<p>Docker启动程序中的参数类型需大写。</p>
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

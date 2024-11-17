@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发信息分享 on Goldydocs</title>
+    <link>http://localhost:1313/categories/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/</link>
+    <description>Recent content in 开发信息分享 on Goldydocs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CCUS-keycloak-long-time-access</title>
+      <link>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/ccus-keycloak-long-time-access/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/ccus-keycloak-long-time-access/</guid>
+      <description>In order to provide access token for CCUS project(K-spice adaptor)&#xA;temporarily set the length to be 60 days: Add Client: Add Roles: &amp;ldquo;user&amp;rdquo;: Click &amp;ldquo;Add selected&amp;rdquo; -&amp;gt; &amp;ldquo;user&amp;rdquo; from &amp;ldquo;Available roles&amp;rdquo; </description>
+    </item>
+    <item>
+      <title>Connect-to-VM-within-your-PC</title>
+      <link>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/connect-to-vm-within-your-pc/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/connect-to-vm-within-your-pc/</guid>
+      <description>by default VM could not visit host PC Here is the way to make the communication channel work:&#xA;Connect to wifi: KDI-IoT Change the connected wifi property to &amp;ldquo;private&amp;rdquo;: eg: Create an inbound rule within firewall: </description>
+    </item>
+    <item>
+      <title>Development Language Chapter</title>
+      <link>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/development-language-chapter/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/development-language-chapter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guacamole docker installation</title>
+      <link>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/guacamole-docker-installation/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/guacamole-docker-installation/</guid>
+      <description>background info: Baiyun project from Mu team(ouyang, dapeng) needs this feature.&#xA;Official ref:&#xA;https://guacamole.apache.org/doc/gug/guacamole-docker.html&#xA;client backup: guacamole-backup.sql&#xA;TODO:&#xA;Change the mysql psw below to a more secure one.&#xA;Change the Guacamode login psw (default is guacadmin/guacadmin)&#xA;Set up docker container restart policy&#xA;SCP to linux server&#xA;Script of installation for Baiyun project:&#xA;//use latest version(202303) docker pull guacamole/guacd:1.5.0 docker pull guacamole/guacamole:1.5.0 //mysql v8 encounters error: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed //use latest v.</description>
+    </item>
+    <item>
+      <title>How to use git</title>
+      <link>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/how-to-use-git/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/how-to-use-git/</guid>
+      <description>How to use git to commit 确保本地代码在master分支，并拉取最新的远端代码 拉取最新的远端代码 run git remote updatecmd 切换到master分支 run git checkout mastercmd 查看当前状态 run git statuscmd 查看所有分支列表 run git branch --allcmd create your branch base on master branch run git checkoutcmd. eg:&#xA;git checkout -b feature-use-git origin/master push your branch to origin run git pushcmd. eg:&#xA;git push origin feature-use-git add your content run git addcmd. eg:&#xA;git add . commit your content to local run git commitcmd.</description>
+    </item>
+    <item>
+      <title>Practical Software Chapter</title>
+      <link>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/practical-software-chapter/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/practical-software-chapter/</guid>
+      <description>&amp;lsquo;- Record screen and output to gif format. here is the [tool]&amp;rsquo;(https://www.screentogif.com/)</description>
+    </item>
+    <item>
+      <title>Problem-and-fix-when-sending-code-using-Teams</title>
+      <link>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/problem-and-fix-when-sending-code-using-teams/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/problem-and-fix-when-sending-code-using-teams/</guid>
+      <description>How to reproduce: One would like to share this code(ktw add environment t https://dev.poc.kognitwin.cn/api --idp=keycloak --tenantId dev-poc --clientId twin-devicelogin --authServerUrl https://auth.ops.kognitwin.cn/ ) with colleague.&#xA;The code is like: One copies and pastes to Teams:&#xA;Colleague copies from Teams but found the code does not work: the problem is within Teams because Teams does some changes to space character (convert space to non breaking space):&#xA;Showing pasted code from Teams in Notepad++ How to solve: Use Code snippet in Teams when sending code: ref: When pasting SQL into Teams, spaces get switched to NonBreaking Spaces and prevent SQL from running </description>
+    </item>
+    <item>
+      <title>dev-team-info</title>
+      <link>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/dev-team-info/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/dev-team-info/</guid>
+      <description>Info Welcome to the dev team! 👏 Please read below standards carefully and come up with a better suggestions if you have any. Let&amp;rsquo;s together build the BEST dev team! FYI: Please be aware the info/work log you provide on coding.net platform will be evaluated towards your KPI assessment.&#xA;Team members Task Assignment and execution Task assignment is done via https://kdic.coding.net/ platform。&#xA;Executor will get an email when task is assigned.</description>
+    </item>
+    <item>
+      <title>开发信息分享</title>
+      <link>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/%E5%BC%80%E5%8F%91%E4%BF%A1%E6%81%AF%E5%88%86%E4%BA%AB/</guid>
+      <description>背景：&#xA;为了搭建公司开发、部署测试环境，在机房搭建了两台服务器（Dell Power Edge 750，Intel Xeon Silver 4314 CPU ，128G RAM），安装了windows 2019 standard 操作系统。需在服务器上安装Docker并在其上运行Nexus和Mysql。目前服务器与internet隔离，无法上网，通过笔记本连接Xiaomi无线路由器，通过Windows远程桌面操作控制服务器 。服务器1：192.168.100.101服务器2: 192.168.100.102&#xA;问题描述：&#xA;服务器1上安装有K-spice软件，在安装Docker desktop（Version 4.15.0）并安装Nexus (Version 3.45.0)和Mysql(8.0.31)后发现如下异常现象先启动Nexus 可正常运行，如此时启动Mysql，Nexus出现异常退出，此时无log输出。先启动Mysql，再启动Nexus，无法正常启动，输出如下WARN信息。&#xA;尝试在Nexus启动后启动Nginx，未出现问题。&#xA;解决方案：&#xA;在Docker Desktop软件的Resources设置内存参数&#xA;结论：&#xA;Nexus3内置的OrientDB的未被分配足够内存资源导致。&#xA;Note:&#xA;Nexus3中的OrientDB部分关于内存资源的日志显示错误。&#xA;Docker启动程序中的参数类型需大写。</description>
+    </item>
+  </channel>
+</rss>

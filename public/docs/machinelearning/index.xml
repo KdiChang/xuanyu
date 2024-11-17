@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MachineLearning on Goldydocs</title>
+    <link>http://localhost:1313/docs/machinelearning/</link>
+    <description>Recent content in MachineLearning on Goldydocs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing with Docker</title>
+      <link>http://localhost:1313/docs/machinelearning/docker/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/docker/</guid>
+      <description>Docker images are available for the linux/amd64, linux/arm/v6, linux/arm/v7 and linux/arm64 platforms. They include everything needed to run Navidrome.&#xA;Using docker-compose : Create a docker-compose.yml file with the following content (or add the navidrome service below to your existing file):&#xA;version: &amp;#34;3&amp;#34; services: navidrome: image: deluan/navidrome:latest user: 1000:1000 # should be owner of volumes ports: - &amp;#34;4533:4533&amp;#34; restart: unless-stopped environment: # Optional: put your config options customization here. Examples: ND_SCANSCHEDULE: 1h ND_LOGLEVEL: info ND_SESSIONTIMEOUT: 24h ND_BASEURL: &amp;#34;&amp;#34; volumes: - &amp;#34;/path/to/data:/data&amp;#34; - &amp;#34;/path/to/your/music/folder:/music:ro&amp;#34; Start it with docker-compose up -d.</description>
+    </item>
+    <item>
+      <title>Linux Install</title>
+      <link>http://localhost:1313/docs/machinelearning/linux/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/linux/</guid>
+      <description>NOTE: These instructions were created for the Ubuntu distribution, and even though they contain specific Ubuntu/Debian instructions (ex: apt) the concepts are generic enough and can be applied on most Linux distributions, even on those not based on Debian (ex: CentOS and OpenSUSE)&#xA;The following steps have been tested on Ubuntu 18.04 and should work on all version 16.04 and above as well as other Debian based distros. Throughout these instructions the commands will have placeholders for the user (&amp;lt;user&amp;gt;) and group (&amp;lt;group&amp;gt;) you want to run Navidrome under and the music folder path (&amp;lt;library_path&amp;gt;).</description>
+    </item>
+    <item>
+      <title>Windows Install</title>
+      <link>http://localhost:1313/docs/machinelearning/windows/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/windows/</guid>
+      <description>Since Navidrome needs to be run from the command line, it is suggested to use a service wrapper to make it into a service as it does not make sense to have a terminal window open whenever you want to use Navidrome. The examples below are for Shawl, NSSM and WinSW.&#xA;Note The default account for new services is the Local System account, which has a different PATH environment variable than your user account.</description>
+    </item>
+    <item>
+      <title>macOS Install</title>
+      <link>http://localhost:1313/docs/machinelearning/macos/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/macos/</guid>
+      <description>Navidrome can be ran by simply double-clicking the binary that has been downloaded from the release page or by running it in the command line. However, that will keep a terminal window open while Navidrome is running.&#xA;To have Navidrome running in the background, we can run it as a service. We define a service as shown below and save that in a file named navidrome.plist in the ~/Library/LaunchAgents/ folder.</description>
+    </item>
+    <item>
+      <title>FreeBSD Install</title>
+      <link>http://localhost:1313/docs/machinelearning/freebsd/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/freebsd/</guid>
+      <description>The following steps have been tested on FreeBSD 12 and 13. They should work on all versions 11.4 and above as well as other supported versions. All prerequisites will be automatically installed when using a package or if building from ports. Throughout these instructions the commands will have placeholders for the user (&amp;lt;user&amp;gt;) and group (&amp;lt;group&amp;gt;) you want to run Navidrome under and the music folder path (&amp;lt;library_path&amp;gt;). If you are using an existing media library ensure the user has permissions to the media library.</description>
+    </item>
+    <item>
+      <title>Community Maintained Packages</title>
+      <link>http://localhost:1313/docs/machinelearning/packages/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/packages/</guid>
+      <description>DISCLAIMER: These packages are not maintained by the Navidrome project, any issues should be reported to their authors.&#xA;Even though the Navidrome project does not provide any pre-packaged installation for specific platforms, there are some packages created and maintained by the community, that can simplify the setup on some systems.&#xA;Here is the list of packages for various OSes/Distributions, provided by Repology:&#xA;More packages available, with links to download/install instructions:</description>
+    </item>
+    <item>
+      <title>Managed Hosting</title>
+      <link>http://localhost:1313/docs/machinelearning/managed/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/managed/</guid>
+      <description>The following providers offer managed hosting for Navidrome. This can be a good option if you don&amp;rsquo;t want to manage your own server.&#xA;PikaPods PikaPods has partnered with us to offer you an officially supported, cloud-hosted solution*.&#xA;Offers 1-click deployments for Navidrome with $5 free welcome credit. EU and US regions available. Includes daily backups and regular app updates.</description>
+    </item>
+    <item>
+      <title>Build from sources</title>
+      <link>http://localhost:1313/docs/machinelearning/build-from-source/</link>
+      <pubDate>Tue, 05 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/build-from-source/</guid>
+      <description>Currently these instructions only work for Unix-based systems (Linux, macOS, BSD, &amp;hellip;). If you are getting trouble trying to build Navidrome in a Windows system, please join our Discord server and ask for help, we will be glad to assist you&#xA;If you can&amp;rsquo;t find a pre-built binary for your platform, you should open an issue in the project&amp;rsquo;s GitHub page.&#xA;If you don&amp;rsquo;t want to wait, you can try to build the binary yourself, with the following steps.</description>
+    </item>
+  </channel>
+</rss>

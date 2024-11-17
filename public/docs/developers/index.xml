@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developers on Goldydocs</title>
+    <link>http://localhost:1313/docs/developers/</link>
+    <description>Recent content in Developers on Goldydocs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/docs/developers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Development Environment</title>
+      <link>http://localhost:1313/docs/developers/dev-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/developers/dev-environment/</guid>
+      <description>This is just a summary on how to get started. If you are stuck or have any questions, please join our Discord server and give us a shout on the #dev channel&#xA;Any IDE with good support for GoLang and JavaScript/Node can be used for Navidrome development. We suggest using Visual Studio Code, which has excellent support for both languages.&#xA;Using VSCode + Dev Container (Docker) The project includes a VSCode Dev Container configuration for using with Docker.</description>
+    </item>
+    <item>
+      <title>Creating New Themes</title>
+      <link>http://localhost:1313/docs/developers/creating-themes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/developers/creating-themes/</guid>
+      <description>Themes in Navidrome are simple Material-UI themes. They are basic JS objects, that allow you to override almost every visual aspect of Navidrome&amp;rsquo;s UI.&#xA;Steps to create a new theme: Create a new JS file in the ui/src/themes folder that exports an object containing your theme. Create the theme based on the ReactAdmin/Material UI documentation below. See the existing themes for examples. Add a themeName property to your theme. This will be displayed in the theme selector Add your new theme to the ui/src/themes/index.</description>
+    </item>
+    <item>
+      <title>Translations</title>
+      <link>http://localhost:1313/docs/developers/translations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/developers/translations/</guid>
+      <description>Translations are currently managed in POEditor. If you want to contribute new translations or help reviewing/proofreading any of the existing ones, please join our Discord server, channel #translations, for translation efforts coordination and to get further instructions.&#xA;Contributing with a Pull Request Alternatively, you can submit a pull request with your proposed changes directly to our project in GitHub. This method requires you to have a GitHub account and some basic knowledge of Git.</description>
+    </item>
+    <item>
+      <title>Subsonic API Compatibility</title>
+      <link>http://localhost:1313/docs/developers/subsonic-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/developers/subsonic-api/</guid>
+      <description>Supported Subsonic API endpoints Navidrome is currently compatible with Subsonic API v1.16.1, with some exceptions.&#xA;OpenSubsonic extensions are being constantly added. For an up to date list of supported extensions, check here.&#xA;This is a (hopefully) up-to-date list of all Subsonic API endpoints implemented in Navidrome. Check the &amp;ldquo;Notes&amp;rdquo; column for limitations/missing behavior. Also keep in mind these differences between Navidrome and Subsonic:&#xA;Navidrome will not implement any video related functionality, it is focused on Music only Right now, Navidrome only works with a single Music Library (Music Folder) There are currently no plans to support browse-by-folder.</description>
+    </item>
+  </channel>
+</rss>

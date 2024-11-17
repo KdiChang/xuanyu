@@ -1,0 +1,419 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs/gsoc/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/gsoc/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>Google Summer of Code 2021 | Goldydocs</title>
+<meta name="description" content="Navidrome GSoC 2021 information">
+<meta property="og:url" content="http://localhost:1313/docs/gsoc/">
+  <meta property="og:site_name" content="Goldydocs">
+  <meta property="og:title" content="Google Summer of Code 2021">
+  <meta property="og:description" content="Navidrome GSoC 2021 information">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Google Summer of Code 2021">
+  <meta itemprop="description" content="Navidrome GSoC 2021 information">
+  <meta itemprop="wordCount" content="1500">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Google Summer of Code 2021">
+  <meta name="twitter:description" content="Navidrome GSoC 2021 information">
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"><path style="fill:#0084ff" d="M256 10.449C120.275 10.449 10.449 120.276 10.449 256c0 135.725 109.826 245.551 245.551 245.551S501.551 391.725 501.551 256C501.551 120.276 391.725 10.449 256 10.449z"/><path style="fill:#fff" d="M256 168.229c-48.515.0-87.771 39.257-87.771 87.771s39.257 87.771 87.771 87.771 87.771-39.257 87.771-87.771S304.515 168.229 256 168.229z"/><path d="M437.061 74.94C388.735 26.615 324.434.0 256 0S123.265 26.615 74.939 74.94.0 187.566.0 256s26.614 132.735 74.939 181.061S187.566 512 256 512s132.735-26.614 181.061-74.939S512 324.434 512 256 485.386 123.266 437.061 74.94zM256 491.102C126.365 491.102 20.898 385.635 20.898 256S126.365 20.898 256 20.898 491.102 126.365 491.102 256 385.635 491.102 256 491.102z"/><path d="M354.22 256c0-54.158-44.061-98.22-98.22-98.22s-98.22 44.062-98.22 98.22 44.062 98.22 98.22 98.22 98.22-44.061 98.22-98.22zm-175.542.0c0-42.636 34.686-77.322 77.322-77.322s77.322 34.686 77.322 77.322S298.636 333.322 256 333.322 178.678 298.636 178.678 256z"/><path d="M285.257 256c0-16.132-13.124-29.257-29.257-29.257S226.743 239.868 226.743 256s13.125 29.257 29.257 29.257S285.257 272.133 285.257 256zm-37.616.0c0-4.609 3.75-8.359 8.359-8.359 4.609.0 8.359 3.75 8.359 8.359.0 4.609-3.75 8.359-8.359 8.359C251.391 264.359 247.641 260.609 247.641 256z"/><path d="M256 391.837c-5.771.0-10.449 4.678-10.449 10.449s4.678 10.449 10.449 10.449c41.897.0 81.265-16.294 110.853-45.883 29.587-29.587 45.881-68.955 45.881-110.852.0-5.771-4.678-10.449-10.449-10.449s-10.449 4.678-10.449 10.449C391.837 330.9 330.9 391.837 256 391.837z"/><path d="M449.306 245.551c-5.771.0-10.449 4.678-10.449 10.449.0 1.481-.018 2.958-.052 4.43-.136 5.769 4.43 10.557 10.199 10.692.085.002.168.003.252.003 5.656.0 10.307-4.517 10.442-10.202.039-1.637.059-3.279.059-4.925C459.755 250.229 455.077 245.551 449.306 245.551z"/><path d="M447.55 284.239c-5.656-1.145-11.168 2.52-12.308 8.178-17.107 84.854-92.489 146.44-179.242 146.44-5.771.0-10.449 4.678-10.449 10.449s4.678 10.449 10.449 10.449c47.353.0 93.467-16.573 129.847-46.668 35.9-29.697 60.717-71.084 69.881-116.54C456.868 290.891 453.207 285.38 447.55 284.239z"/><path d="M256 120.163c5.771.0 10.449-4.678 10.449-10.449S261.771 99.265 256 99.265c-41.897.0-81.265 16.294-110.853 45.883C115.559 174.735 99.265 214.103 99.265 256c0 5.771 4.678 10.449 10.449 10.449s10.449-4.678 10.449-10.449c0-74.9 60.937-135.837 135.837-135.837z"/><path d="M62.996 240.876c-5.759-.14-10.557 4.43-10.692 10.199-.039 1.637-.059 3.279-.059 4.925.0 5.771 4.678 10.449 10.449 10.449S73.143 261.771 73.143 256c0-1.481.018-2.958.052-4.43C73.331 245.8 68.765 241.013 62.996 240.876z"/><path d="M256 73.143c5.771.0 10.449-4.678 10.449-10.449S261.771 52.245 256 52.245c-47.353.0-93.467 16.573-129.847 46.668-35.9 29.697-60.717 71.084-69.881 116.54-1.14 5.657 2.521 11.168 8.178 12.308.697.141 1.392.208 2.076.208 4.872.0 9.232-3.426 10.232-8.386C93.864 134.729 169.247 73.143 256 73.143z"/></svg></span><span class="navbar-brand__name">Goldydocs</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/about/"><span>About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/demo/"><span>Demo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs/"><span>Documentation</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/gsoc/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Google Summer of Code 2021</h1>
+<div class="lead">Navidrome GSoC 2021 information</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+
+    </ul>
+
+
+<div class="content">
+      <h2 id="introduction">Introduction</h2>
+<p>Navidrome started in February 2016 as a modern and lightweight alternative to <a href="http://subsonic.org">Subsonic</a>:
+written in <a href="https://golang.org/">Go</a>/<a href="https://reactjs.org/">React</a>, implementing the <a href="http://www.subsonic.org/pages/api.jsp">subsonic API</a> and thus compatible with all the <a href="http://www.subsonic.org/pages/apps.jsp">subsonic clients</a> in the world, licensed under GPL3, … Being relatively young, it does come/use modern development practices like continuous integration, a comprehensive testsuite, a relatively clean codebase, automatic dependency upgrades, automatic linting/CI/static analysis/… on each pull-request, <a href="https://www.navidrome.org/docs/">comprehensive documentation</a> … It recently gained popularity due to the decay of <a href="http://subsonic.org">Subsonic</a>/<a href="http://airsonic.org">Airsonic</a>, and currently has more than 4M downloads of its <a href="https://hub.docker.com/r/deluan/navidrome">docker image</a>, and had its binaries downloaded more than 12k times.</p>
+<p align="left">
+<img width="700" src="/screenshots/gsoc-2021/ss-desktop-player.png">
+</p>
+<p>A demo version is available as well: <a href="https://demo.navidrome.org">https://demo.navidrome.org</a></p>
+<h2 id="mentors-and-contacts">Mentors and Contacts</h2>
+<p>We&rsquo;re using discord for communications, feel free to <a href="https://discord.gg/sv3nB9Ytn2">join</a>.</p>
+<p>As for the mentors:</p>
+<ul>
+<li>Deluan Quintão (<a href="https://en.wikipedia.org/wiki/Eastern_Time_Zone">ET</a>): deluan &ndash; <a href="https://x.com/deluan">@deluan</a></li>
+<li>Julien Voisin (<a href="https://en.wikipedia.org/wiki/Central_European_Time">CET</a>): jvoisin &ndash; <a href="https://x.com/dustriorg">@dustriorg</a></li>
+</ul>
+<h2 id="development-methodology">Development methodology</h2>
+<p>The main repository is hosted on <a href="https://github.com/deluan/navidrome">Github</a>, which is also used for tracking bugs and running the continuous integration. The main communication medium is <a href="https://discord.gg/xh7j7yF">Discord</a>, along with <a href="https://x.com/navidrome">X</a> for announcements, and <a href="https://www.reddit.com/r/navidrome/">Reddit</a> as general purpose forum.
+The usual way to get code in is to submit a pull-request, which will be reviewed by the community and merged. Adding some tests might of course speed up this process.</p>
+<h2 id="instructions-for-students">Instructions for students</h2>
+<p>Students willing to take part in the Google Summer of Code 2021 with navidrome should send a couple of pull-requests, to demonstrate that they&rsquo;re both motivated and capable of writing code and contributing to the project.</p>
+<h2 id="tech-stack">Tech stack</h2>
+<ul>
+<li>Server:
+<ul>
+<li><a href="https://golang.org">Go</a></li>
+<li><a href="https://www.sqlite.org/">SQLite3</a></li>
+</ul>
+</li>
+<li>Frontend (WebUI)
+<ul>
+<li><a href="https://reactjs.org/">React</a></li>
+<li><a href="https://marmelab.com/react-admin/">React Admin</a></li>
+<li><a href="https://material-ui.com/">Material-UI</a></li>
+<li><a href="https://redux.js.org/">Redux</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="recommended-steps">Recommended steps</h2>
+<ol>
+<li>Read <a href="https://google.github.io/gsocguides/student/">Google&rsquo;s instructions for participating</a></li>
+<li>Grab any project from the list of ideas that you&rsquo;re interested in (or even suggest your own!).</li>
+<li>Write a <a href="https://docs.google.com/document/d/1kDPGgr_D5tQuYLQi_gEGlkuQ-DlU8GH5kDBqZbVSC7I/edit">first draft proposal</a> and ask one of the mentors to review it with you.</li>
+<li>Submit it using Google&rsquo;s web interface.</li>
+</ol>
+<h2 id="student-proposal-guidelines">Student proposal guidelines</h2>
+<ul>
+<li>Keep it simple enough to fit in no more than a couple of pages. Try to be clear and concise in your writing.</li>
+<li>Try to split GSoC period into tasks, and each task into subtasks. It helps us to understand how you plan to accomplish your goals, but more importantly, it&rsquo;ll help you to understand the task deep enough before starting, and prioritize important things to do first.</li>
+<li>Please, note, how much time a day/week you are able to spend on this project. We do expect something between 30h and 40h.</li>
+<li>Submit your proposal early, not at the last minute!</li>
+<li>Feel free to choose a “backup” idea (the second task you want to do), so that conflicts (two students for one task) can be resolved.</li>
+</ul>
+<h2 id="ideas">Ideas</h2>
+<h3 id="1-media-sharing">1. <strong>Media sharing</strong></h3>
+<p>One of the nice features of Subsonic is its <a href="http://www.subsonic.org/pages/features.jsp">ability to generate a sharing link</a> for a track/album/artist/playlist to send to friends, so that they can listen/download the music without having an account on your instance. This is a nice alternative to youtube links to share music.
+A nice way to implement this would be to have a table of shares, with a shorturl as ID. The table would store a reference to what is being shared.  This shorturl would be used by a public endpoint.
+We would also need a standalone player similar to what is provided by Spotify when you share music through their service. Ex:</p>
+<p align="left">
+<img width="600" src="/screenshots/gsoc-2021/spotify-share.png">
+</p>
+<h4 id="steps">Steps</h4>
+<ul>
+<li>Add a table for shares</li>
+<li>Add a way to create shares in the UI</li>
+<li>Implement the Subsonic API related endpoints: <a href="http://subsonic.org/pages/api.jsp#getShares">getShares</a>, <a href="http://subsonic.org/pages/api.jsp#createShare">createShare</a>, <a href="http://subsonic.org/pages/api.jsp#updateShare">updateShare</a> and <a href="http://subsonic.org/pages/api.jsp#deleteShare">deleteShare</a></li>
+<li>Add a standalone player (could be based on our current React Player)</li>
+</ul>
+<h4 id="details">Details</h4>
+<ul>
+<li>Skill level: Medium</li>
+<li>Required abilities: Go and willing to learn a bit of React</li>
+<li>Expected outcome: Ability to share music with friends.</li>
+</ul>
+<h4 id="links-and-further-reading">Links and further reading</h4>
+<ul>
+<li><a href="https://github.com/deluan/navidrome/issues/748">https://github.com/deluan/navidrome/issues/748</a></li>
+</ul>
+<h3 id="2-jukebox-mode">2. <strong>Jukebox mode</strong></h3>
+<p>Some servers can be run in <a href="http://www.subsonic.org/pages/features.jsp">&ldquo;jukebox&rdquo;</a> mode where the music is played directly on the server&rsquo;s audio hardware, ex: mpd and Subsonic. A tricky part of this task might be to properly expose the &ldquo;jukebox client&rdquo; in the WebUI interface, as the current react-music-player used by Navidrome would have to somehow control the jukebox (via API) instead of the browser&rsquo;s Audio component.</p>
+<h4 id="steps-1">Steps</h4>
+<ul>
+<li>Implementing a minimal subsonic client in go to connect to the server</li>
+<li>Implementing an audio output for the subsonic client</li>
+<li>Implementing the frontend part to select the jukebox mode and control the subsonic client</li>
+<li>Implementing the Subsonic API&rsquo;s <code>jukeboxControl</code> endpoint</li>
+</ul>
+<h4 id="details-1">Details</h4>
+<ul>
+<li>Skill level: Hard</li>
+<li>Required abilities: Go and React, a bit of UX would be nice</li>
+<li>Expected outcome: Ability to play music from the device running navidrome.</li>
+</ul>
+<h4 id="links-and-further-reading-1">Links and further reading</h4>
+<ul>
+<li><a href="https://github.com/deluan/navidrome/issues/364">https://github.com/deluan/navidrome/issues/364</a></li>
+<li><a href="https://airsonic.github.io/docs/jukebox/">https://airsonic.github.io/docs/jukebox/</a></li>
+<li><a href="http://subsonic.org/pages/api.jsp#jukeboxControl">http://subsonic.org/pages/api.jsp#jukeboxControl</a></li>
+</ul>
+<h3 id="3-google-homealexa-integration">3. <strong>Google home/alexa integration</strong></h3>
+<p>Nowadays, tech-oriented people tend to have a home assistant, and thus might want to be able to use it to control their subsonic instance. Since there is already the subsonic API to perform actions, this task on &ldquo;only&rdquo; a matter of writing the glue between Alexa/Google home and the API. Some <em>actions</em> might require a bit more than glue, for example, to play specific tracks/albums.</p>
+<p>This task can be nicely paired with the jukebox one.</p>
+<h4 id="steps-2">Steps</h4>
+<ul>
+<li>Implementing the glue between Alexa/Google home and the Subsonic API</li>
+<li>Implementing the frontend part to configure this machinery</li>
+</ul>
+<h4 id="details-2">Details</h4>
+<ul>
+<li>Skill level: Hard</li>
+<li>Required abilities: Go, having an Alexa/Google Home is a plus, but worse case we can send the student a device.</li>
+<li>Expected outcome: Ability to play/pause/next/previous the music via a home assistant</li>
+</ul>
+<h4 id="links-and-further-reading-2">Links and further reading</h4>
+<ul>
+<li><a href="https://github.com/deluan/navidrome/issues/682">https://github.com/deluan/navidrome/issues/682</a></li>
+<li><a href="https://developers.google.com/assistant/">https://developers.google.com/assistant/</a></li>
+<li><a href="https://developer.amazon.com/en-US/alexa/alexa-skills-kit">https://developer.amazon.com/en-US/alexa/alexa-skills-kit</a></li>
+</ul>
+<h3 id="4-multiple-libraries-support">4. <strong>Multiple libraries support</strong></h3>
+<p>Some users want to use multiple libraries at the same time, for example to separate lossy/lossless albums, one for official albums and an other for bootlegs/lives, or one for audiobooks, some are even dreaming about having remote ones to listen to their friend&rsquo;s music without leaving their navidrome instance!</p>
+<h4 id="steps-3">Steps</h4>
+<ul>
+<li>Implement support for multiple libraries</li>
+<li>Implement the UI allowing users to switch between libraries</li>
+<li>Implement permissions: Which user has access to which library</li>
+<li>Implement the <code>musicFolderId</code> attribute in most Subsonic API endpoints</li>
+<li>Plus: Implement support to access remote libraries from the WebUI</li>
+</ul>
+<h4 id="details-3">Details</h4>
+<ul>
+<li>Skill level: Hard</li>
+<li>Required abilities: Go and SQL, and a teensy bit of react for the UX</li>
+<li>Expected outcome: Ability to use multiple libraries within a single user account</li>
+</ul>
+<h4 id="links-and-further-reading-3">Links and further reading</h4>
+<ul>
+<li><a href="https://github.com/deluan/navidrome/issues/192">https://github.com/deluan/navidrome/issues/192</a></li>
+<li><a href="http://subsonic.org/pages/api.jsp#getMusicFolders">http://subsonic.org/pages/api.jsp#getMusicFolders</a></li>
+</ul>
+<h3 id="5-omnisearch">5. <strong>Omnisearch</strong></h3>
+<p>One search bar to search across the whole library, using proper <a href="https://www.sqlite.org/fts5.html">SQLite&rsquo;s Full Text Search</a>, instead of having one separate search field per domain (artist, album, …)</p>
+<h4 id="steps-4">Steps</h4>
+<ul>
+<li>Replace current search implementation on the server with a new one using SQLite3&rsquo;s FTS5</li>
+<li>Implement a search bar in the WebUI on the NavBar</li>
+<li>Implement a Search Results page, with links to artists, albums, songs and playlists</li>
+<li>Plus: integrate FTS5 with Spellfix1, to enable search for close matches. May not be supported by <code>go-sqlite3</code> library used by Navidrome</li>
+</ul>
+<h4 id="details-4">Details</h4>
+<ul>
+<li>Skill level: Medium</li>
+<li>Required abilities: Go and React.JS</li>
+<li>Expected outcome: Ability to have a single search field operating across all the library</li>
+</ul>
+<h4 id="links-and-further-reading-4">Links and further reading</h4>
+<ul>
+<li><a href="https://github.com/deluan/navidrome/issues/255">https://github.com/deluan/navidrome/issues/255</a></li>
+<li><a href="https://github.com/deluan/navidrome/issues/468">https://github.com/deluan/navidrome/issues/468</a></li>
+<li><a href="https://www.sqlite.org/fts5.html">https://www.sqlite.org/fts5.html</a></li>
+<li><a href="https://www.sqlite.org/spellfix1.html#overview">https://www.sqlite.org/spellfix1.html#overview</a></li>
+</ul>
+<h3 id="6-infinite-scroll">6. <strong>Infinite Scroll</strong></h3>
+<p>Currently, navidrome is using pagination instead of providing a more convenient infinite-scroll. The implementation isn&rsquo;t trivial because navidrome is using <a href="https://marmelab.com/react-admin/">react-admin</a>, which not only doesn&rsquo;t provide this feature out of the box, but makes it non-trivial to implement.</p>
+<h4 id="steps-5">Steps</h4>
+<ul>
+<li>Implement a new List component for React-Admin, that does not use pagination. It should load new data on demand. This component should be usable in all places where we currently use React-Admin&rsquo;s List</li>
+</ul>
+<h4 id="details-5">Details</h4>
+<ul>
+<li>Skill level: Medium</li>
+<li>Required abilities: React.JS, with a bit of Go and SQL</li>
+<li>Expected outcome: Infinite scrolling is implemented and usable.</li>
+</ul>
+<h4 id="links-and-further-reading-5">Links and further reading</h4>
+<ul>
+<li><a href="https://github.com/deluan/navidrome/issues/132">https://github.com/deluan/navidrome/issues/132</a></li>
+<li><a href="https://marmelab.com/blog/2019/01/17/react-timeline.html">https://marmelab.com/blog/2019/01/17/react-timeline.html</a></li>
+<li><a href="https://marmelab.com/react-admin/List.html#uselistcontroller">https://marmelab.com/react-admin/List.html#uselistcontroller</a></li>
+</ul>
+<h3 id="7-lyrics-support">7. <strong>Lyrics support</strong></h3>
+<p>It would be nice for navidrome to support <a href="https://en.wikipedia.org/wiki/LRC_(file_format)">LRC files</a> to display lyrics. A possible stretch goal would be to implement lyrics fetching.</p>
+<h4 id="steps-6">Steps</h4>
+<ul>
+<li>Implement lyrics importing (from tags or external .lrc files)</li>
+<li>Make navidrome library aware of the presence of lyrics</li>
+<li>Implement Subsonic API&rsquo;s <code>getLyrics</code> endpoint</li>
+<li>In the WebUI, when lyrics are available for the current song being played, set the appropriate attributes of the React Music Player used</li>
+</ul>
+<h4 id="details-6">Details</h4>
+<ul>
+<li>Skill level: Easy</li>
+<li>Required abilities: Go and React.JS</li>
+<li>Expected outcome: Ability to see lyrics in the WebUI or Subsonic client when playing a song</li>
+</ul>
+<h4 id="links-and-further-reading-6">Links and further reading</h4>
+<ul>
+<li><a href="https://github.com/deluan/navidrome/issues/249">https://github.com/deluan/navidrome/issues/249</a></li>
+<li><a href="http://subsonic.org/pages/api.jsp#getLyrics">http://subsonic.org/pages/api.jsp#getLyrics</a></li>
+<li><a href="https://github.com/lijinke666/react-music-player">https://github.com/lijinke666/react-music-player</a></li>
+</ul>
+<h3 id="8-volume-normalization">8. <strong>Volume normalization</strong></h3>
+<p>It would be nice if navidrome could perform audio normalization, to avoid having to fiddle with the volume when listening to different tracks of various volumes.</p>
+<h4 id="steps-7">Steps</h4>
+<ul>
+<li>Expose a preference to the user</li>
+<li>Implement per-track normalization</li>
+<li>Implement per-album normalization</li>
+</ul>
+<h4 id="details-7">Details</h4>
+<ul>
+<li>Skill level: Easy</li>
+<li>Required abilities: Go and React.JS</li>
+<li>Expected outcome: Ability to have constant volume output in navidrome</li>
+</ul>
+<h4 id="links-and-further-reading-7">Links and further reading</h4>
+<ul>
+<li><a href="https://github.com/deluan/navidrome/issues/233">https://github.com/deluan/navidrome/issues/233</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Audio_normalization">https://en.wikipedia.org/wiki/Audio_normalization</a></li>
+<li><a href="https://trac.ffmpeg.org/wiki/AudioVolume">https://trac.ffmpeg.org/wiki/AudioVolume</a></li>
+</ul>
+<h3 id="9-new-album-grid">9. <strong>New Album grid</strong></h3>
+<p>It would be nice to have something resembling <a href="https://www.plex.tv/">Plex</a>&rsquo;s interface, with covert art fading in, as well as a <em>slider</em> to adjust their size.</p>
+<h4 id="steps-8">Steps</h4>
+<ul>
+<li>Implement the slider for the covers</li>
+<li>Implement asynchronous loading for the covers</li>
+<li>Implement the fading in upon loading</li>
+</ul>
+<h4 id="details-8">Details</h4>
+<ul>
+<li>Skill level: Medium</li>
+<li>Required abilities: React.JS / Material-UI</li>
+<li>Expected outcome: Have a plex-looking album grid, with fading, scaling and async loading</li>
+</ul>
+<h4 id="links-and-further-reading-8">Links and further reading</h4>
+<ul>
+<li><a href="https://github.com/deluan/navidrome/issues/323">https://github.com/deluan/navidrome/issues/323</a></li>
+<li><a href="https://www.plex.tv/">https://www.plex.tv/</a></li>
+</ul>
+<h2 id="links-and-resources">Links and resources</h2>
+<ul>
+<li><a href="https://developers.google.com/open-source/gsoc/timeline">GSoC 2021 timeline</a></li>
+<li><a href="https://developers.google.com/open-source/gsoc/faq">GSoC FAQ</a></li>
+<li><a href="https://google.github.io/gsocguides/student/">GSoC student guide</a></li>
+</ul>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

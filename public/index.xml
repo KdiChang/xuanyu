@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goldydocs</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Goldydocs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 08 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Navidrome Configuration Options</title>
+      <link>http://localhost:1313/docs/usage/configuration-options/</link>
+      <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/configuration-options/</guid>
+      <description>Navidrome allows some customization using environment variables, loading from a configuration file or using command line arguments.&#xA;Configuration File Navidrome tries to load the configuration from a navidrome.toml file in the current working directory, if it exists. You can create this file and put any of the configuration options below in it. Example of a configuration file (select your OS):&#xA;Example: Windows macOS Unix-based systems # This is just an example!</description>
+    </item>
+    <item>
+      <title>Artwork location resolution</title>
+      <link>http://localhost:1313/docs/usage/artwork/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/artwork/</guid>
+      <description>Artists Fetching images for artists is controlled by the ArtistArtPriority config option. This is a comma-separated list of places to look for artist images. The default is artist.*, album/artist.*, external, meaning:&#xA;First try to find an artist.* image in the artist folder(s) If not found, try to find an artist.* image in one of the album folders for this artist If not found, try to fetch it from an external service (currently only Spotify) If not found, use the artist image placeholder (grey star image) Albums CoverArt fetching for albums is controlled by the CoverArtPriority config option.</description>
+    </item>
+    <item>
+      <title>External Integrations</title>
+      <link>http://localhost:1313/docs/usage/external-integrations/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/external-integrations/</guid>
+      <description>Last.fm Navidrome can use Last.fm to retrieve artists biographies, top songs, similar artists and album covers. It can also send your scrobbles to Last.fm. For these features to work, you&amp;rsquo;ll need to set the config options LastFM.ApiKey and LastFM.Secret. You can obtain these values by creating a free API account in Last.fm:&#xA;Go to https://www.last.fm/api/account/create and create an API account. Only the Application Name field is mandatory: After submitting the form, you can get the API Key and Shared Secret from the Account Created page: Copy the values above to your configuration file as LastFM.</description>
+    </item>
+    <item>
+      <title>Sharing</title>
+      <link>http://localhost:1313/docs/usage/sharing/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/sharing/</guid>
+      <description>NOTE Please be aware that the Sharing feature is still under active development, and improvements to functionality and security are expected in future updates. Please report any issues or suggestions to the Navidrome GitHub issues page. Navidrome has a &amp;ldquo;Sharing&amp;rdquo; feature which allows users to generate a shareable link for a track, album, artist, or playlist. This link can then be sent to friends, allowing them to listen or download the music without having an account on your Navidrome instance.</description>
+    </item>
+    <item>
+      <title>Monitoring Navidrome</title>
+      <link>http://localhost:1313/docs/usage/monitoring/</link>
+      <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/monitoring/</guid>
+      <description>Currently, Navidrome supports monitoring and alerting using Prometheus/OpenMetrics standard. Example Grafana dashboard:&#xA;Overview Prometheus is a service that takes data from a metrics endpoint and collects it. Grafana is a dashboard service that can take data from a Prometheus server and display it. Navidrome has an easy way to create a metrics endpoint that Prometheus can use. Once you point Prometheus to this endpoint, and Grafana to your Prometheus server, you will be able to monitor your Navidrome instance.</description>
+    </item>
+    <item>
+      <title>Jukebox mode</title>
+      <link>http://localhost:1313/docs/usage/jukebox/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/jukebox/</guid>
+      <description>Introduction Navidrome&amp;rsquo;s Jukebox feature is a built-in functionality that allows users to play music directly to the server&amp;rsquo;s audio hardware. This essentially turns your server into a jukebox, enabling you to play songs or playlists remotely through a supported Subsonic client. With the Jukebox feature, you can control the audio playback in real-time, just like you would with any other media player. It&amp;rsquo;s a convenient way to enjoy your music collection without the need for additional hardware or software.</description>
+    </item>
+    <item>
+      <title>Metadata Extractors</title>
+      <link>http://localhost:1313/docs/usage/extractors/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/extractors/</guid>
+      <description>Music metadata Music metadata is derived from audio files via one of the two Extractors for the Scanner:&#xA;TagLib ffmpeg The extractor used for scanning can be configured via configuration options using Scanner.Extractor.&#xA;TagLib TagLib is the default extractor. It is faster at extracting but does not support as many file formats/audio coding formats as ffmpeg.&#xA;Ffmpeg You may want to try ffmpeg for extracting if you have files in your collection that are not supported by TagLib - see their official documentation for information on what is supported.</description>
+    </item>
+    <item>
+      <title>Security Considerations</title>
+      <link>http://localhost:1313/docs/usage/security/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/security/</guid>
+      <description>Permissions You should NOT run Navidrome as root. Ideally you should have it running under its own user. Navidrome only needs read-only access to the Music Folder, and read-write permissions to the Data Folder.&#xA;Encrypted passwords To be able to keep compatibility with the Subsonic API and its clients, Navidrome needs to store user&amp;rsquo;s passwords in its database. By default, Navidrome encrypts the passwords in the DB with a shared encryption key, just for the sake of obfuscation as this key can be easily found in the codebase.</description>
+    </item>
+    <item>
+      <title>Installing with Docker</title>
+      <link>http://localhost:1313/docs/machinelearning/docker/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/docker/</guid>
+      <description>Docker images are available for the linux/amd64, linux/arm/v6, linux/arm/v7 and linux/arm64 platforms. They include everything needed to run Navidrome.&#xA;Using docker-compose : Create a docker-compose.yml file with the following content (or add the navidrome service below to your existing file):&#xA;version: &amp;#34;3&amp;#34; services: navidrome: image: deluan/navidrome:latest user: 1000:1000 # should be owner of volumes ports: - &amp;#34;4533:4533&amp;#34; restart: unless-stopped environment: # Optional: put your config options customization here. Examples: ND_SCANSCHEDULE: 1h ND_LOGLEVEL: info ND_SESSIONTIMEOUT: 24h ND_BASEURL: &amp;#34;&amp;#34; volumes: - &amp;#34;/path/to/data:/data&amp;#34; - &amp;#34;/path/to/your/music/folder:/music:ro&amp;#34; Start it with docker-compose up -d.</description>
+    </item>
+    <item>
+      <title>Linux Install</title>
+      <link>http://localhost:1313/docs/machinelearning/linux/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/linux/</guid>
+      <description>NOTE: These instructions were created for the Ubuntu distribution, and even though they contain specific Ubuntu/Debian instructions (ex: apt) the concepts are generic enough and can be applied on most Linux distributions, even on those not based on Debian (ex: CentOS and OpenSUSE)&#xA;The following steps have been tested on Ubuntu 18.04 and should work on all version 16.04 and above as well as other Debian based distros. Throughout these instructions the commands will have placeholders for the user (&amp;lt;user&amp;gt;) and group (&amp;lt;group&amp;gt;) you want to run Navidrome under and the music folder path (&amp;lt;library_path&amp;gt;).</description>
+    </item>
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://localhost:1313/docs/usage/troubleshooting/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/troubleshooting/</guid>
+      <description>Album cover art is not showing up This issue was fixed in version 0.15.0, please upgrade!&#xA;You don&amp;rsquo;t see any artwork in Navidrome&amp;rsquo;s UI and in any Subsonic clients, and you are getting errors in the logs like this:&#xA;panic: runtime error: invalid memory address or nil pointer dereference&#xD;-&amp;gt; github.com/djherbis/fscache.(*handleCounter).inc&#xD;-&amp;gt; /go/pkg/mod/github.com/djherbis/fscache@v0.10.0/fscache.go:327&#xD;github.com/djherbis/fscache.(*FSCache).newFile&#xD;/go/pkg/mod/github.com/djherbis/fscache@v0.10.0/fscache.go:227&#xD;github.com/djherbis/fscache.(*FSCache).Get&#xD;/go/pkg/mod/github.com/djherbis/fscache@v0.10.0/fscache.go:154&#xD;github.com/navidrome/navidrome/engine.(*cover).Get&#xD;/github/workspace/engine/cover.go:50 This is being caused by a bug, and we are already working on a fix for it.</description>
+    </item>
+    <item>
+      <title>Windows Install</title>
+      <link>http://localhost:1313/docs/machinelearning/windows/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/windows/</guid>
+      <description>Since Navidrome needs to be run from the command line, it is suggested to use a service wrapper to make it into a service as it does not make sense to have a terminal window open whenever you want to use Navidrome. The examples below are for Shawl, NSSM and WinSW.&#xA;Note The default account for new services is the Local System account, which has a different PATH environment variable than your user account.</description>
+    </item>
+    <item>
+      <title>macOS Install</title>
+      <link>http://localhost:1313/docs/machinelearning/macos/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/macos/</guid>
+      <description>Navidrome can be ran by simply double-clicking the binary that has been downloaded from the release page or by running it in the command line. However, that will keep a terminal window open while Navidrome is running.&#xA;To have Navidrome running in the background, we can run it as a service. We define a service as shown below and save that in a file named navidrome.plist in the ~/Library/LaunchAgents/ folder.</description>
+    </item>
+    <item>
+      <title>FreeBSD Install</title>
+      <link>http://localhost:1313/docs/machinelearning/freebsd/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/freebsd/</guid>
+      <description>The following steps have been tested on FreeBSD 12 and 13. They should work on all versions 11.4 and above as well as other supported versions. All prerequisites will be automatically installed when using a package or if building from ports. Throughout these instructions the commands will have placeholders for the user (&amp;lt;user&amp;gt;) and group (&amp;lt;group&amp;gt;) you want to run Navidrome under and the music folder path (&amp;lt;library_path&amp;gt;). If you are using an existing media library ensure the user has permissions to the media library.</description>
+    </item>
+    <item>
+      <title>Community Maintained Packages</title>
+      <link>http://localhost:1313/docs/machinelearning/packages/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/packages/</guid>
+      <description>DISCLAIMER: These packages are not maintained by the Navidrome project, any issues should be reported to their authors.&#xA;Even though the Navidrome project does not provide any pre-packaged installation for specific platforms, there are some packages created and maintained by the community, that can simplify the setup on some systems.&#xA;Here is the list of packages for various OSes/Distributions, provided by Repology:&#xA;More packages available, with links to download/install instructions:</description>
+    </item>
+    <item>
+      <title>Managed Hosting</title>
+      <link>http://localhost:1313/docs/machinelearning/managed/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/managed/</guid>
+      <description>The following providers offer managed hosting for Navidrome. This can be a good option if you don&amp;rsquo;t want to manage your own server.&#xA;PikaPods PikaPods has partnered with us to offer you an officially supported, cloud-hosted solution*.&#xA;Offers 1-click deployments for Navidrome with $5 free welcome credit. EU and US regions available. Includes daily backups and regular app updates.</description>
+    </item>
+    <item>
+      <title>Build from sources</title>
+      <link>http://localhost:1313/docs/machinelearning/build-from-source/</link>
+      <pubDate>Tue, 05 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/machinelearning/build-from-source/</guid>
+      <description>Currently these instructions only work for Unix-based systems (Linux, macOS, BSD, &amp;hellip;). If you are getting trouble trying to build Navidrome in a Windows system, please join our Discord server and ask for help, we will be glad to assist you&#xA;If you can&amp;rsquo;t find a pre-built binary for your platform, you should open an issue in the project&amp;rsquo;s GitHub page.&#xA;If you don&amp;rsquo;t want to wait, you can try to build the binary yourself, with the following steps.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/index.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/index.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Search Results</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

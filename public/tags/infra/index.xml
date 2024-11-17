@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infra on Goldydocs</title>
+    <link>http://localhost:1313/tags/infra/</link>
+    <description>Recent content in Infra on Goldydocs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/infra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>镜像部署check list</title>
+      <link>http://localhost:1313/docs/product/kognitwin/infra/%E9%95%9C%E5%83%8F%E9%83%A8%E7%BD%B2check-list/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/product/kognitwin/infra/%E9%95%9C%E5%83%8F%E9%83%A8%E7%BD%B2check-list/</guid>
+      <description>twinservice 镜像 部署完毕后，访问https://THE_TWIN_URL/api/ready 会显示 ready, 如： 该镜像的log不应该有error。 twin 镜像 部署完毕后，浏览器打开Debugger, 找到包含main.***.js的请求并在新页面访问https://THE_TWIN_URL/main.***.js。确定其status是200，而且页面会显示该js， 该js大小约1Mb, 如： 。 请确保该页面的请求时间小于4s. twinadmin 镜像 部署完毕后，浏览器打开Debugger, 找到包含main..js的请求并在新页面访问https://THE_TWIN_ADMIN_URL/main..js。确定其status是200，而且页面会显示该js， 该js大小约8Mb, 如： 。 请确保该页面的请求时间小于4s. 访问https://poc.kognitwin.cn/api/files/ 确定其status是200，返回应是array 其他镜像请确保log没有错误 </description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,291 @@
+    <!doctype html>
+    <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>FreeBSD Install | Goldydocs</title>
+<meta name="description" content="Steps to install on FreeBSD (using ports or package)">
+<meta property="og:url" content="http://localhost:1313/docs/machinelearning/freebsd/">
+  <meta property="og:site_name" content="Goldydocs">
+  <meta property="og:title" content="FreeBSD Install">
+  <meta property="og:description" content="Steps to install on FreeBSD (using ports or package)">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2017-01-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2017-01-03T00:00:00+00:00">
+
+  <meta itemprop="name" content="FreeBSD Install">
+  <meta itemprop="description" content="Steps to install on FreeBSD (using ports or package)">
+  <meta itemprop="datePublished" content="2017-01-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2017-01-03T00:00:00+00:00">
+  <meta itemprop="wordCount" content="442">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FreeBSD Install">
+  <meta name="twitter:description" content="Steps to install on FreeBSD (using ports or package)">
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+
+      <script src="/js/sorttable.js"></script>
+    </head>
+    <body class="td-page">
+    <header>
+      <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"><path style="fill:#0084ff" d="M256 10.449C120.275 10.449 10.449 120.276 10.449 256c0 135.725 109.826 245.551 245.551 245.551S501.551 391.725 501.551 256C501.551 120.276 391.725 10.449 256 10.449z"/><path style="fill:#fff" d="M256 168.229c-48.515.0-87.771 39.257-87.771 87.771s39.257 87.771 87.771 87.771 87.771-39.257 87.771-87.771S304.515 168.229 256 168.229z"/><path d="M437.061 74.94C388.735 26.615 324.434.0 256 0S123.265 26.615 74.939 74.94.0 187.566.0 256s26.614 132.735 74.939 181.061S187.566 512 256 512s132.735-26.614 181.061-74.939S512 324.434 512 256 485.386 123.266 437.061 74.94zM256 491.102C126.365 491.102 20.898 385.635 20.898 256S126.365 20.898 256 20.898 491.102 126.365 491.102 256 385.635 491.102 256 491.102z"/><path d="M354.22 256c0-54.158-44.061-98.22-98.22-98.22s-98.22 44.062-98.22 98.22 44.062 98.22 98.22 98.22 98.22-44.061 98.22-98.22zm-175.542.0c0-42.636 34.686-77.322 77.322-77.322s77.322 34.686 77.322 77.322S298.636 333.322 256 333.322 178.678 298.636 178.678 256z"/><path d="M285.257 256c0-16.132-13.124-29.257-29.257-29.257S226.743 239.868 226.743 256s13.125 29.257 29.257 29.257S285.257 272.133 285.257 256zm-37.616.0c0-4.609 3.75-8.359 8.359-8.359 4.609.0 8.359 3.75 8.359 8.359.0 4.609-3.75 8.359-8.359 8.359C251.391 264.359 247.641 260.609 247.641 256z"/><path d="M256 391.837c-5.771.0-10.449 4.678-10.449 10.449s4.678 10.449 10.449 10.449c41.897.0 81.265-16.294 110.853-45.883 29.587-29.587 45.881-68.955 45.881-110.852.0-5.771-4.678-10.449-10.449-10.449s-10.449 4.678-10.449 10.449C391.837 330.9 330.9 391.837 256 391.837z"/><path d="M449.306 245.551c-5.771.0-10.449 4.678-10.449 10.449.0 1.481-.018 2.958-.052 4.43-.136 5.769 4.43 10.557 10.199 10.692.085.002.168.003.252.003 5.656.0 10.307-4.517 10.442-10.202.039-1.637.059-3.279.059-4.925C459.755 250.229 455.077 245.551 449.306 245.551z"/><path d="M447.55 284.239c-5.656-1.145-11.168 2.52-12.308 8.178-17.107 84.854-92.489 146.44-179.242 146.44-5.771.0-10.449 4.678-10.449 10.449s4.678 10.449 10.449 10.449c47.353.0 93.467-16.573 129.847-46.668 35.9-29.697 60.717-71.084 69.881-116.54C456.868 290.891 453.207 285.38 447.55 284.239z"/><path d="M256 120.163c5.771.0 10.449-4.678 10.449-10.449S261.771 99.265 256 99.265c-41.897.0-81.265 16.294-110.853 45.883C115.559 174.735 99.265 214.103 99.265 256c0 5.771 4.678 10.449 10.449 10.449s10.449-4.678 10.449-10.449c0-74.9 60.937-135.837 135.837-135.837z"/><path d="M62.996 240.876c-5.759-.14-10.557 4.43-10.692 10.199-.039 1.637-.059 3.279-.059 4.925.0 5.771 4.678 10.449 10.449 10.449S73.143 261.771 73.143 256c0-1.481.018-2.958.052-4.43C73.331 245.8 68.765 241.013 62.996 240.876z"/><path d="M256 73.143c5.771.0 10.449-4.678 10.449-10.449S261.771 52.245 256 52.245c-47.353.0-93.467 16.573-129.847 46.668-35.9 29.697-60.717 71.084-69.881 116.54-1.14 5.657 2.521 11.168 8.178 12.308.697.141 1.392.208 2.076.208 4.872.0 9.232-3.426 10.232-8.386C93.864 134.729 169.247 73.143 256 73.143z"/></svg></span><span class="navbar-brand__name">Goldydocs</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/about/"><span>About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/demo/"><span>Demo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs/"><span>Documentation</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsmachinelearning-li">
+  <input type="checkbox" id="m-docsmachinelearning-check" checked/>
+  <label for="m-docsmachinelearning-check"><a href="/docs/machinelearning/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docsmachinelearning"><span class="">MachineLearning</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmachinelearningdocker-li">
+  <input type="checkbox" id="m-docsmachinelearningdocker-check"/>
+  <label for="m-docsmachinelearningdocker-check"><a href="/docs/machinelearning/docker/" title="Installing with Docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmachinelearningdocker"><span class="">Docker</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmachinelearninglinux-li">
+  <input type="checkbox" id="m-docsmachinelearninglinux-check"/>
+  <label for="m-docsmachinelearninglinux-check"><a href="/docs/machinelearning/linux/" title="Linux Install" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmachinelearninglinux"><span class="">Linux</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmachinelearningwindows-li">
+  <input type="checkbox" id="m-docsmachinelearningwindows-check"/>
+  <label for="m-docsmachinelearningwindows-check"><a href="/docs/machinelearning/windows/" title="Windows Install" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmachinelearningwindows"><span class="">Windows</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmachinelearningmacos-li">
+  <input type="checkbox" id="m-docsmachinelearningmacos-check"/>
+  <label for="m-docsmachinelearningmacos-check"><a href="/docs/machinelearning/macos/" title="macOS Install" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmachinelearningmacos"><span class="">macOS</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsmachinelearningfreebsd-li">
+  <input type="checkbox" id="m-docsmachinelearningfreebsd-check" checked/>
+  <label for="m-docsmachinelearningfreebsd-check"><a href="/docs/machinelearning/freebsd/" title="FreeBSD Install" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-docsmachinelearningfreebsd"><span class="td-sidebar-nav-active-item">FreeBSD</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmachinelearningpackages-li">
+  <input type="checkbox" id="m-docsmachinelearningpackages-check"/>
+  <label for="m-docsmachinelearningpackages-check"><a href="/docs/machinelearning/packages/" title="Community Maintained Packages" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmachinelearningpackages"><span class="">Community Packages</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmachinelearningmanaged-li">
+  <input type="checkbox" id="m-docsmachinelearningmanaged-check"/>
+  <label for="m-docsmachinelearningmanaged-check"><a href="/docs/machinelearning/managed/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmachinelearningmanaged"><span class="">Managed Hosting</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsmachinelearningbuild-from-source-li">
+  <input type="checkbox" id="m-docsmachinelearningbuild-from-source-check"/>
+  <label for="m-docsmachinelearningbuild-from-source-check"><a href="/docs/machinelearning/build-from-source/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-docsmachinelearningbuild-from-source"><span class="">Build from sources</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/docs/machinelearning/_print/"><i class="fa-solid fa-print fa-fw"></i> Print entire section</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#install-using-package">Install Using Package</a></li>
+        <li><a href="#build--install-using-ports">Build &amp; Install Using Ports</a></li>
+        <li><a href="#start-the-navidrome-service">Start the Navidrome Service</a></li>
+      </ul>
+    </li>
+    <li><a href="#customizing-your-installation">Customizing your Installation</a>
+      <ul>
+        <li><a href="#run-as-a-different-user">Run as a Different User</a></li>
+        <li><a href="#configuration-file-location">Configuration File Location</a></li>
+        <li><a href="#data-folder">Data Folder</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+	
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/machinelearning/">MachineLearning</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    FreeBSD</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>FreeBSD Install</h1>
+	<div class="lead">Steps to install on FreeBSD (using ports or package)</div>
+	<header class="article-meta">
+		
+  <p class="reading-time"><i class="fa-solid fa-clock" aria-hidden="true"></i>&nbsp; 3 minute read &nbsp;</p>
+</header>
+	<p>The following steps have been tested on FreeBSD 12 and 13.  They should work on all versions 11.4 and above as well as other supported versions. All prerequisites will be automatically installed when using a package or if building from ports. Throughout these instructions the commands will have placeholders for the user (<code>&lt;user&gt;</code>) and group (<code>&lt;group&gt;</code>) you want to run Navidrome under and the music folder path (<code>&lt;library_path&gt;</code>). If you are using an existing media library ensure the user has permissions to the media library.</p>
+<h3 id="install-using-package">Install Using Package</h3>
+<p>Use the package tool (pkg) to install Navidrome from a binary package.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pkg install navidrome
+</span></span></code></pre></div><p>Follow any on screen instructions to complete your installation.</p>
+<h3 id="build--install-using-ports">Build &amp; Install Using Ports</h3>
+<p>Instead of using a binary package you can build from source.  Before you start, make sure your local ports tree is up to date.  Refer to the <a href="https://docs.freebsd.org/en/books/handbook/ports/#ports-using">FreeBSD Handbook</a> on the recommended way to fetch or update your ports tree.</p>
+<p>Switch to the port directory for Navidrome and run <code>make install</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#204a87">cd</span> /usr/ports/multimedia/navidrome
+</span></span><span style="display:flex;"><span>make install
+</span></span></code></pre></div><p>The build process could take several minutes depending on the speed of your computer.  Follow any on screen instructions to complete your installation.</p>
+<h3 id="start-the-navidrome-service">Start the Navidrome Service</h3>
+<p>Start the service and verify it has started correctly.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>service navidrome onestart
+</span></span><span style="display:flex;"><span>service navidrome onestatus
+</span></span></code></pre></div><p>Navidrome is configured to listen on <code>127.0.0.1</code> on port <code>4533</code>.  The &lt;library_path&gt; is preset to <code>${PREFIX}/share/navidrome/music</code>
+If the service has started correctly, verify you can access <a href="http://localhost:4533">http://localhost:4533</a>.</p>
+<p>To run Navidrome at system startup, enable the service in <code>/etc/rc.conf</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sysrc <span style="color:#000">navidrome_enable</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;YES&#34;</span>
+</span></span></code></pre></div><h2 id="customizing-your-installation">Customizing your Installation</h2>
+<p>The defaults provided out of the box by the port and package are sufficient to get your started.  You can customize these settings if required by using a combonation of <code>/etc/rc.conf</code> and the Navidrome configuration file.</p>
+<h3 id="run-as-a-different-user">Run as a Different User</h3>
+<p>Navidrome will run as the <code>www</code> user.  If you need to change it to something else use <code>/etc/rc.conf</code> to set a user and group.
+You can easily adjust this using the <code>sysrc</code> tool:</p>
+<pre tabindex="0"><code>sysrc navidrome_user=&#34;&lt;user&gt;&#34;
+sysrc navidrome_group=&#34;&lt;group&gt;&#34;
+</code></pre><h3 id="configuration-file-location">Configuration File Location</h3>
+<p>A default configuration file will be installed under <code>/usr/local/etc/navidrome</code> named <code>config.toml</code>.  This can be changed by setting a new path in <code>/etc/rc.conf</code>.
+You can easily adjust this using the <code>sysrc</code> tool:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sysrc <span style="color:#000">navidrome_config</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;/path/to/new/config_file.toml&#34;</span>
+</span></span></code></pre></div><p>Make sure the user Navidrome is running as has permission to read the file.</p>
+<p>For additional configuration options see the <a href="https://www.navidrome.org/docs/usage/configuration-options/">configuration options page</a>.</p>
+<h3 id="data-folder">Data Folder</h3>
+<p>The data folder is located under <code>/var/db/navidrome</code>.  The prefered way to change this is by using <code>/etc/rc.conf</code>
+You can easily adjust this using the <code>sysrc</code> tool:</p>
+<pre tabindex="0"><code>sysrc navidrome_datafolder=&#34;/path/to/new/folder&#34;
+</code></pre><p>Make sure the user Navidrome is running as has permission to read and write to the folder contents.</p>
+
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+    </body>
+    </html>

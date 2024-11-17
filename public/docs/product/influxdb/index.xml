@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>influxdb on Goldydocs</title>
+    <link>http://localhost:1313/docs/product/influxdb/</link>
+    <description>Recent content in influxdb on Goldydocs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/product/influxdb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How-to-get-started</title>
+      <link>http://localhost:1313/docs/product/influxdb/how-to-get-started/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/product/influxdb/how-to-get-started/</guid>
+      <description> Run docker run -d -p 8086:8086 \ -e DOCKER_INFLUXDB_INIT_MODE=setup \ -e DOCKER_INFLUXDB_INIT_USERNAME=my-user \ -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \ -e DOCKER_INFLUXDB_INIT_ORG=my-org \ -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \ -e DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=my-super-secret-auth-token \ --restart=always \ --name influxdb275 \ influxdb:2.7.5 </description>
+    </item>
+    <item>
+      <title>Vew-data-in-vs-code</title>
+      <link>http://localhost:1313/docs/product/influxdb/vew-data-in-vs-code/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/product/influxdb/vew-data-in-vs-code/</guid>
+      <description> Download and install the Flux extension. Add influxdb connection by clicking the button: Take LNG for example, Try the demo flux query: from(bucket: &amp;#34;my-bucket&amp;#34;) |&amp;gt; range(start: 0) |&amp;gt; filter(fn: (r) =&amp;gt; r[&amp;#34;_measurement&amp;#34;] == &amp;#34;config-data&amp;#34;) |&amp;gt; sort(desc: true, columns: [&amp;#34;_time&amp;#34;]) |&amp;gt; limit(n: 1) Click &amp;ldquo;Run -&amp;gt; Run without debugging&amp;rdquo;: One should get data like: </description>
+    </item>
+  </channel>
+</rss>
