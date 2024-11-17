@@ -35,7 +35,7 @@ jobs:
           cache-dependency-path: './package-lock.json'
 
       - name: Install PostCSS and Autoprefixer
-        run: npm install postcss-cli autoprefixer
+        run: npm install postcss-cli autoprefixer postcss
         
       - name: Echo success message
         run: echo "PostCSS and plugins installed successfully"
@@ -48,3 +48,5 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }} # <-- specify same branch as above here
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: public
