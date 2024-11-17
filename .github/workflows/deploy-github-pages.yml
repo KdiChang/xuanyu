@@ -34,10 +34,11 @@ jobs:
           cache: 'npm'
           cache-dependency-path: './package-lock.json'
 
-      - name: Install PostCSS and Plugins
-        run: 
-          npm install postcss-cli autoprefixer
-          echo "PostCSS and plugins installed successfully"
+      - name: Install PostCSS and Autoprefixer
+        run: npm install postcss-cli autoprefixer
+        
+      - name: Echo success message
+        run: echo "PostCSS and plugins installed successfully"
 
       - run: npm ci
       - run: hugo --baseURL https://${REPO_OWNER}.github.io/${REPO_NAME} --minify
