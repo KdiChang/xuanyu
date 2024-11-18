@@ -50,6 +50,8 @@ jobs:
         uses: actions/configure-pages@v3
       - name: 安装Node.js依赖
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: 下载docsy
+        run: npm install --save-dev docsy
       - name: 使用Hugo构建
         env:
           # 为了与Hugo模块的最大向后兼容性
